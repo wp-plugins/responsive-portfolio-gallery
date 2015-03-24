@@ -13,7 +13,7 @@ if(!class_exists('PortfolioItemPostType')){
 			add_action('admin_init', array(&$this, 'admin_init'));
 			add_post_type_support( 'page', 'page-attributes' );
 			
-			add_filter( 'template_include', array(&$this, 'insert_my_template'));
+			add_filter( 'single_template', array(&$this, 'insert_my_template'));
 		} // END public function __construct()
 
 		/**  hook into WP's init action hook **/
@@ -130,7 +130,7 @@ if(!class_exists('PortfolioItemPostType')){
 		public function insert_my_template($template){
 			global $post;
 			if(get_post_type( $post ) == "portfolio-item"){
-				return include(sprintf("%s/../templates/single-portfolio-item.php", dirname(__FILE__), self::POST_TYPE));
+				$template = sprintf("%s/../templates/single-portfolio-item.php", dirname(__FILE__), self::POST_TYPE);
 			}
 			return $template;
 		}

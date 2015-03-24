@@ -2,7 +2,7 @@
 /*
 Plugin Name: Responsive Portfolio Gallery
 Plugin URI: http://responsive-portfolio-gallery-demo.rocketship.co.nz/
-Description: A plugin designed to provide the easy creation of portfolio pages within WordPress.  Takes advantage of the jQuery plugin isotope.js
+Description: A plugin designed to provide the easy creation of a responsive portfolio gallery from within WordPress.  The jQuery plugin Shuffle.js is used to provide wonderful css transitions to filter your portfolio gallery by categories. 
 Version: 1.0
 Author: Shane Watters
 Author URI: http://www.rocketship.co.nz
